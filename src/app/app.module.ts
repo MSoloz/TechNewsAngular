@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,8 @@ import { CommunitiesComponent } from './communities/communities.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {MatButtonModule} from '@angular/material/button';
+
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -35,9 +37,17 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+
+
+export class AppModule {
+
+
+
+ }
