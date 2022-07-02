@@ -13,6 +13,11 @@ import { MessagesComponent } from './messages/messages.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { CommunitiesComponent } from './communities/communities.component';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+import {MatButtonModule} from '@angular/material/button';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,9 @@ import { CommunitiesComponent } from './communities/communities.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
